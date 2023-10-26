@@ -81,7 +81,6 @@ end
     
   #   Appointment.create(doctor_id: doctor, patient_id: patient, city_id: city, date: date)
   # end
-  puts "si ca marche dit wouhou2"
   
   # Doctor.all.each do |doctor|
   #   rand = rand(1..3)
