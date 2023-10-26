@@ -1,24 +1,21 @@
-# README
+Modèles et Relations - Free Docto
+Modèles de Données
+Patient :
+Attributs : id, first_name, last_name, city_id
+Relations : Un patient peut avoir plusieurs rendez-vous.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Doctor :
+Attributs : id, first_name, last_name, city_id
+Relations : Un médecin peut avoir plusieurs rendez-vous et plusieurs spécialités.
 
-Things you may want to cover:
+Specialty :
+Attributs : id, name
+Relations : Plusieurs médecins peuvent avoir la même spécialité et vice versa.
 
-* Ruby version
+Appointment :
+Attributs : id, doctor_id, patient_id, city_id, date
+Relations : Chaque rendez-vous est associé à un médecin et un patient qui sont dans la meme ville.
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+City :
+Attributs : id, name
+Relations : Plusieurs patients, médecins et rendez-vous peuvent être associés à la même ville.
