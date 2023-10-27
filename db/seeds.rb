@@ -70,25 +70,3 @@ end
     appointment = Appointment.create(doctor: doctor, patient: patient, city: city, date: date)
   end
 end
-
-  # 30.times do
-  #   doctor = Doctor.all.sample.id
-  #   puts ("essaie 1:#{doctor}")
-  #   patient = Patient.all.sample.id
-  #   puts ("essaie 2:#{patient}")
-  #   city = City.all.sample.id
-  #   date = Faker::Time.between_dates(from: Date.today, to: 1.year.from_now, period: :all)
-    
-  #   Appointment.create(doctor_id: doctor, patient_id: patient, city_id: city, date: date)
-  # end
-  
-  # Doctor.all.each do |doctor|
-  #   rand = rand(1..3)
-  #   speciality_array = specialties.dup
-  #   rand.times do
-  #     speciality_rand=speciality_array.sample
-  #     speciality_array.delete(speciality_rand)
-  #     speciality=Specialty.find_by(name: speciality_rand).id
-  #     DoctorsSpecialty.create(doctor_id: doctor.id, specialty_id: speciality)
-  #   end
-  # end
